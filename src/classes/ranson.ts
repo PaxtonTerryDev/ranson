@@ -9,8 +9,8 @@ import {
 import { adjectives, nouns } from "../data/misc";
 import { USareaCodes } from "../data/phone";
 
-export abstract class RansonData {
-  abstract generate(): RansonData;
+export interface RansonData {
+  generate(): RansonData;
 }
 
 /**
