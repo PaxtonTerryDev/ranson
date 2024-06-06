@@ -13,6 +13,8 @@ export interface RansonData {
   generate(): RansonData;
 }
 
+//TODO: Add jsdoc comments for each method
+
 /**
  * Utility class with static methods that can be used with the Ranson Library
  */
