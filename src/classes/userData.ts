@@ -4,7 +4,7 @@ import { lastName } from "../data/lastName";
 import { States, USLocation } from "../data/location";
 import { Ranson, RansonData } from "./ranson";
 
-export class UserData extends RansonData {
+export class UserData implements RansonData {
   firstName: string;
   lastName: string;
   phone: string;
@@ -13,7 +13,6 @@ export class UserData extends RansonData {
   location: USLocation;
 
   constructor() {
-    super();
     this.firstName = Ranson.generateFromDataset(firstName);
     this.lastName = Ranson.generateFromDataset(lastName);
     this.phone = Ranson.generateRandomUSPhone(PhoneFormat.Dashes);
@@ -27,6 +26,6 @@ export class UserData extends RansonData {
   }
 
   generate(): RansonData {
-    return new UserData();
+    return this;
   }
 }
