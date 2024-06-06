@@ -1,17 +1,19 @@
 {
   "name": "ranson",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Robust random json data generator, with several built in data types, and the ability to implement custom generated data.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "compile": "npx tsc",
-    "rc": "rm -rf ./dist && npm run compile",
-    "test": "npm run rc && node ./dist/index.js"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PaxtonTerryDev/ranson.git"
   },
+  "files": [
+    "dist/**/*"
+  ],
   "keywords": [
     "random",
     "random-data",
