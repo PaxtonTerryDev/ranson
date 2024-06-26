@@ -1,6 +1,6 @@
 {
   "name": "ranson",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Robust random json data generator, with several built in data types, and the ability to implement custom generated data.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
